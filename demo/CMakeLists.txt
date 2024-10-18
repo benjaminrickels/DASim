@@ -1,0 +1,17 @@
+add_executable(demo_sqlite_insert src/demo_sqlite_insert.cc)
+target_include_directories(demo_sqlite_insert PRIVATE include)
+target_link_libraries(demo_sqlite_insert PRIVATE damemory -lsqlite3)
+
+add_executable(demo_sqlite_select src/demo_sqlite_select.cc)
+target_include_directories(demo_sqlite_select PRIVATE include)
+target_link_libraries(demo_sqlite_select PRIVATE damemory -lsqlite3)
+
+add_executable(demo_sqlite_insert_more src/demo_sqlite_insert_more.cc)
+target_include_directories(demo_sqlite_insert_more PRIVATE include)
+target_link_libraries(demo_sqlite_insert_more PRIVATE damemory -lsqlite3)
+
+add_executable(demo_quicksort src/demo_quicksort.cc)
+target_link_libraries(demo_quicksort PRIVATE damemory)
+
+add_executable(demo_quicksort_inspect src/demo_quicksort_inspect.cc)
+target_link_libraries(demo_quicksort_inspect PRIVATE damemory)
